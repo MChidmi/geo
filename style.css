@@ -1,5 +1,7 @@
 /* style.css */
-body {
+body ,html{
+    width: 100%;
+    height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +10,19 @@ body {
 }
 
 #content {
-    margin-top: 50px;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(171, 157, 157);
+    border: solid;
+    border-radius: 5px;
 }
 
 button {
@@ -16,11 +30,10 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #007bff;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
 }
-
 button:hover {
     background-color: #0056b3;
 }
@@ -28,4 +41,41 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 18px;
+}
+#inner-content{
+    
+    /* box-shadow: 0 0 20px 0px #ddd1d1; */
+    border-radius: 25px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: calc(100vh);
+    height: calc(100vh / 3* 1.5);
+    /* background-color: #ffffff00; */
+}
+#login-form{
+    gap: 20px;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    }
+
+.link{
+    cursor: pointer;
+}
+.link:hover{
+    color: #007bff;
 }

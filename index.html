@@ -13,15 +13,31 @@
 
     <!-- Cloudflare CDN for jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
     <!-- Link to external JS file -->
     <script src="main.js" defer></script>
 </head>
 <body>
 
     <div id="content">
-        <h1>Minimal AJAX Example</h1>
-        <button id="load-data">Load Data</button>
-        <div id="result"></div>
+        <div id="inner-content">
+
+            <form id ="login-form">
+                <h1>Log in :</h1>
+                <input tabindex='-1' type="email" id="username" placeholder="Example@examle.com" required autocomplete="email">
+                <input tabindex='-1' type="password" id="password" placeholder="Example@examle.com" required autocomplete="current-password">
+                <button id="log" type="submit">LOG IN</button>
+                <a class="link">forgot password ?</a>
+                <hr>
+                <h1>Track :</h1>
+                <input tabindex='-1' type="text" id="Track" placeholder="T000000" required autocomplete="track_ids">
+                <button  id="log" type="submit">Track </button>
+                <a clas s="link">doesn't work ?</a>
+
+            </form>
+
+        </div>
     </div>
 
 </body>
